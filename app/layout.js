@@ -1,7 +1,19 @@
-import { Inter } from "next/font/google";
+import { Poppins, Fira_Sans, Cedarville_Cursive} from "next/font/google";
 import "./globals.css";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
-const inter = Inter({ subsets: ["latin"] });
+const poppins = Fira_Sans({ 
+  weight: ['400'],
+  subsets: ['latin'],
+  variable: '--font-poppins',
+ })
+
+ const cedarville = Cedarville_Cursive({ 
+  weight: ['400'],
+  subsets: ['latin'],
+  variable: '--font-cedarville',
+ })
 
 export const metadata = {
   title: "Create Next App",
@@ -11,7 +23,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${cedarville.variable} ${poppins.variable}`}>
+        <Navbar />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
