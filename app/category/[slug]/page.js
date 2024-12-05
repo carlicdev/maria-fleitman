@@ -12,9 +12,9 @@ const Category = async ({params}) => {
   return (
     <main>
       <CategoryHero title={slug} content='Un contenido'/>
-      <CategoryCarousel category={slug} />
+      {/* <CategoryCarousel category={slug} />
       <CategoryFavorites category={slug} />
-      <PostList category={slug} />
+      <PostList category={slug} /> */}
       <ReelsSection />
       <SubscribeAlt />
     </main>
