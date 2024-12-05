@@ -1,7 +1,9 @@
 import React from 'react'
 import PostCard from './PostCard'
+import { getPosts } from '../services/graphql'
 
-const RecentPostsSection = () => {
+const RecentPostsSection = async () => {
+  const posts = await getPosts()
   return (
     <div>
         <div className='bg-white text-center py-24 border-b border-black'>
@@ -12,6 +14,7 @@ const RecentPostsSection = () => {
                 <PostCard />
                 <PostCard />
                 <PostCard />
+
         </div>
     </div>
   )

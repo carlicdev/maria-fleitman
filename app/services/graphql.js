@@ -1,35 +1,7 @@
 import { request, gql } from 'graphql-request';
 
-const graphqlAPI = process.env.NEXT_PUBLIC_GRAPHCMS_ENDPOINT;
+const graphqlAPI = process.env.NEXT_PUBLIC_GRAPHCMS_ENDPOINT2;
 
-export const getBooks = async () => {
-  const query = gql`
-      query Assets {
-        booksConnection {
-          edges {
-            node {
-              author
-              slug
-              genres {
-                id
-                name
-              }
-              rating
-              synopsis
-              title
-              coverImage {
-                url
-              }
-            }
-          }
-        }
-      }
-  `
-
-  const result = await request(graphqlAPI, query);
-
-  return result.booksConnection.edges;
-};
 
 export const getPosts = async () => {
     const query = gql`
@@ -41,7 +13,7 @@ export const getPosts = async () => {
               bio
               id
               name
-              photo {
+              image {
                 url
               }
             }
@@ -134,7 +106,7 @@ export const getPostDetails = async (slug) => {
                 bio
                 id
                 name
-                photo {
+                image {
                   url
                 }
               }
@@ -194,7 +166,7 @@ export const getFeaturedPosts = async () => {
       posts(where: {featuredPost: true}) {
         author {
           name
-          photo {
+          image {
             url
           }
         }
@@ -259,7 +231,7 @@ export const getCategoryPost = async (slug) => {
               bio
               name
               id
-              photo {
+              image {
                 url
               }
             }
@@ -289,7 +261,7 @@ export const getOutfits = async () => {
   const query = gql`
 query MyQuery {
   outfits {
-    mainImage {
+    featuredImage {
       url
       id
     }

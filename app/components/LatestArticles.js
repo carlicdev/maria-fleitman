@@ -6,7 +6,7 @@ import Link from 'next/link'
 const LatestArticles = async() => {
     const posts = await getPosts()
 
-    console.log(posts)
+    console.log({posts})
   return (
     <div className='w-full'>
         <div className='w-full px-5'>

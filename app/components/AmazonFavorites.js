@@ -14,14 +14,18 @@ const AmazonFavorites = async () => {
                 </div>
             </div>
         </div>
-        <div className='flex flex-col px-5'>
-            <img src={items[index].image.url} alt='item' className='w-full h-[500px]' />
-            <div className='flex flex-wrap'>
-                <p className='mr-auto ml-0'>{items[index].name}</p>
-                <p className='mr-0 ml-auto'>${items[index].price}</p>
+        {
+            items.length && (
+            <div className='flex flex-col px-5'>
+                <img src={items[index].image.url} alt='item' className='w-full h-[500px]' />
+                <div className='flex flex-wrap'>
+                    <p className='mr-auto ml-0'>{items[index].name}</p>
+                    <p className='mr-0 ml-auto'>${items[index].price}</p>
+                </div>
+                <p className='mr-0 ml-auto mt-5 '>${items[index].description}</p>
             </div>
-            <p className='mr-0 ml-auto mt-5 '>${items[index].description}</p>
-        </div>
+            )
+        }
     </div>
   )
 }

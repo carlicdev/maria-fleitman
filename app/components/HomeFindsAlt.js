@@ -15,11 +15,15 @@ const HomeFindsAlt = async () => {
                 </div>
             </div>
         </div>
-        <div className='flex flex-col'>
-            <img src={items[index].image.url} alt='item' className='w-full h-[500px]' />
-            <p>{items[index].name}</p>
-            <p>${items[index].price}</p>
-        </div>
+        {
+            items.length && (
+            <div className='flex flex-col'>
+                <img src={items[index].image.url} alt='item' className='w-full h-[500px]' />
+                <p>{items[index].name}</p>
+                <p>${items[index].price}</p>
+            </div>
+            )
+        }
     </div>
   )
 }
