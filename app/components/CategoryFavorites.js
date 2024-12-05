@@ -15,7 +15,7 @@ const CategoryFavorites = async ({category}) => {
           <div className='flex items-center justify-center gap-2 '>
             {
                     lastItems.map((item, index) => (
-                      <div className=' bg-white w-56 h-56 text-center'>
+                      <div key={index} className=' bg-white w-56 h-56 text-center'>
                         <Link href={`/`}>
                           <img src={item.image.url} alt='uno' className='w-56 h-56' />
                           <p className='text-xl mt-2'>{item.name}</p>
