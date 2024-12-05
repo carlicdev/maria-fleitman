@@ -15,7 +15,7 @@ const HomeFindsAlt = async () => {
                 </div>
             </div>
         </div>
-        {
+        {/* {
             items.length && (
             <div className='flex flex-col'>
                 <img src={items[index].image.url} alt='item' className='w-full h-[500px]' />
@@ -23,7 +23,7 @@ const HomeFindsAlt = async () => {
                 <p>${items[index].price}</p>
             </div>
             )
-        }
+        } */}
     </div>
   )
 }

@@ -17,7 +17,7 @@ const LatestArticles = async() => {
             </div>
         </div>
         <div className='w-full flex flex-wrap '>
-            {
+            {/* {
                 posts.length && (
                     posts.map((post, index) => (
                         <div key={index} className='w-full lg:w-1/2 mt-5 p-5'>
@@ -34,43 +34,7 @@ const LatestArticles = async() => {
                         </div>
                     ))
                 )
-            }
-            <div className='w-full lg:w-1/2 mt-5 p-5'>
-                <img src='/maria-fondo.jpg' alt='uno' className='w-full h-[200px]' />
-                <p className='my-5 text-neutral-300 font-bold text-2xl'>Pop the bubbly! Our Holiday HQ is Live!</p>
-                <div className='flex gap-5 items-center justify-start'>
-                    <p className='font-bold text-black text-sm'>María</p>
-                    <p className='font-light text-gray-600 text-sm'>November 10, 2024</p>
-                </div>
-                <p className='text-gray-600 text-xl my-5'>Pop, fizz, clink, shop</p>
-            </div>
-            <div className='w-full lg:w-1/2 mt-5 p-5'>
-                <img src='/maria-fondo.jpg' alt='uno' className='w-full h-[200px]' />
-                <p className='my-5 text-neutral-300 font-bold text-2xl'>Pop the bubbly! Our Holiday HQ is Live!</p>
-                <div className='flex gap-5 items-center justify-start'>
-                    <p className='font-bold text-black text-sm'>María</p>
-                    <p className='font-light text-gray-600 text-sm'>November 10, 2024</p>
-                </div>
-                <p className='text-gray-600 text-xl my-5'>Pop, fizz, clink, shop</p>
-            </div>
-            <div className='w-full lg:w-1/2 mt-5 p-5'>
-                <img src='/maria-fondo.jpg' alt='uno' className='w-full h-[200px]' />
-                <p className='my-5 text-neutral-300 font-bold text-2xl'>Pop the bubbly! Our Holiday HQ is Live!</p>
-                <div className='flex gap-5 items-center justify-start'>
-                    <p className='font-bold text-black text-sm'>María</p>
-                    <p className='font-light text-gray-600 text-sm'>November 10, 2024</p>
-                </div>
-                <p className='text-gray-600 text-xl my-5'>Pop, fizz, clink, shop</p>
-            </div>
-            <div className='w-full lg:w-1/2 mt-5 p-5'>
-                <img src='/maria-fondo.jpg' alt='uno' className='w-full h-[200px]' />
-                <p className='my-5 text-neutral-300 font-bold text-2xl'>Pop the bubbly! Our Holiday HQ is Live!</p>
-                <div className='flex gap-5 items-center justify-start'>
-                    <p className='font-bold text-black text-sm'>María</p>
-                    <p className='font-light text-gray-600 text-sm'>November 10, 2024</p>
-                </div>
-                <p className='text-gray-600 text-xl my-5'>Pop, fizz, clink, shop</p>
-            </div>
+            } */}
         </div>
     </div>
   )

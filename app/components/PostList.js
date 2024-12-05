@@ -9,7 +9,7 @@ const PostList = async ({category}) => {
 
   return (
     <div className='w-full flex flex-wrap'>
-      {
+      {/* {
         posts.length &&
         posts.map((post, index) => (
           <div key={index} className='w-full md:w-1/2 lg:w-1/3 mt-5 p-5'>
@@ -24,7 +24,7 @@ const PostList = async ({category}) => {
             <p className='text-gray-600 text-xl my-5'>{post.node.excerpt}</p>
         </div>
         ))
-      }
+      } */}
     </div>
   )
 }

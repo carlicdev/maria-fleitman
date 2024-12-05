@@ -12,7 +12,7 @@ const HomeFinds = async () => {
         <div className='w-full lg:w-1/5'>
           <p className='text-8xl  -rotate-90 capitalize'>Home finds</p>
         </div>
-        {
+        {/* {
           items.length && (
           <div className='w-full lg:w-4/5 flex flex-col justify-center items-center p-10'>
             <div className='flex items-center justify-center gap-4 '>
@@ -29,7 +29,7 @@ const HomeFinds = async () => {
             <p className='text-4xl mt-10'>Shop More Finds</p>
           </div>
           )
-        }
+        } */}
       </div>
     </div>
   )
