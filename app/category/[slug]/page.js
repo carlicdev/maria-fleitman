@@ -6,7 +6,7 @@ import ReelsSection from "@/app/components/ReelsSection"
 import SubscribeAlt from "@/app/components/SubscribeAlt"
 
 
-const Category = async ({params}) => {
+const Category = async () => {
     // const { slug } = await params
     
   return (
