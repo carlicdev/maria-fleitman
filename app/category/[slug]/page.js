@@ -7,11 +7,11 @@ import SubscribeAlt from "@/app/components/SubscribeAlt"
 
 
 const Category = async ({params}) => {
-    const { slug } = await params
+    // const { slug } = await params
     
   return (
     <main>
-      <CategoryHero title={slug} content='Un contenido'/>
+      {/* <CategoryHero title={slug} content='Un contenido'/> */}
       {/* <CategoryCarousel category={slug} />
       <CategoryFavorites category={slug} />
       <PostList category={slug} /> */}

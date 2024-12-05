@@ -14,7 +14,7 @@ const AmazonFavorites = async () => {
                 </div>
             </div>
         </div>
-        {
+        {/* {
             items.length && (
             <div className='flex flex-col px-5'>
                 <img src={items[index].image.url} alt='item' className='w-full h-[500px]' />
@@ -25,7 +25,7 @@ const AmazonFavorites = async () => {
                 <p className='mr-0 ml-auto mt-5 '>${items[index].description}</p>
             </div>
             )
-        }
+        } */}
     </div>
   )
 }
