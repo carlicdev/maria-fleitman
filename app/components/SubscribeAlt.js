@@ -24,7 +24,7 @@ const SubscribeAlt = () => {
                             <button 
                                 type='submit'
                                 className='uppercase text-2xl  px-5 py-2 mt-4 mb-2  text-xl shadow text-white bg-neutral-300'>
-                                {'Subscribe'}
+                                {`Subscribe`}
                             </button>
                         </form>
 
