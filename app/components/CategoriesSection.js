@@ -13,13 +13,13 @@ const CategoriesSection = () => {
               </div>
               <div className='border border-black w-full h-full p-3'>
                 <div className="bg-cover bg-center bg-yellow-400">
-                  <Image src={'/cat01.jpg'} width={400} height={300} className="bg-cover bg-center"/>
+                  <Image src={'/cat01.jpg'} alt='img' width={400} height={300} className="bg-cover bg-center"/>
                 </div>
               </div>
             </div>
             <div className='w-72 h-96'>
               <div className='mt-5 border border-black w-full h-full p-3'>
-                <Image src={'/cat02.png'} width={400} height={300} className="bg-cover bg-center"/>
+                <Image src={'/cat02.png'} alt='img' width={400} height={300} className="bg-cover bg-center"/>
               </div>
               <div className='flex text-sm uppercase'>
                 <p className='ml-0 mr-auto'>/02</p>
@@ -32,12 +32,12 @@ const CategoriesSection = () => {
                 <p className='mr-0 ml-auto'>lifestyle</p>
               </div>
               <div className='border border-black w-full h-full p-3'>
-                <Image src={'/cat03.png'} width={400} height={300} className="bg-cover bg-center"/>
+                <Image src={'/cat03.png'} alt='img' width={400} height={300} className="bg-cover bg-center"/>
               </div>
             </div>
             <div className='w-72 h-96'>
               <div className='mt-5 border border-black w-full h-full p-3'>
-              <Image src={'/cat04.png'} width={400} height={300} className="bg-cover bg-center"/>
+              <Image src={'/cat04.png'} alt='img' width={400} height={300} className="bg-cover bg-center"/>
               </div>
               <div className='flex text-sm uppercase'>
                 <p className='ml-0 mr-auto'>/04</p>

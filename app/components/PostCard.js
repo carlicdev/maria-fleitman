@@ -6,7 +6,7 @@ const PostCard = () => {
         <div className='flex flex-wrap items-center justify-center max-w-5xl mx-auto'>
             <div className='w-1/2 p-5  flex items-center justify-center'>
                 <div className="border border-black p-5">
-                    <Image src={'/cellajane.jpg'} width={400} height={400} />
+                    <Image src={'/cellajane.jpg'} alt='uno' width={400} height={400} />
                 </div>
             </div>
             <div className='w-1/2 flex flex-col gap-5 items-center justify-center p-5'>

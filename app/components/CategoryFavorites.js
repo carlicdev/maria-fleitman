@@ -4,7 +4,7 @@ import { getItemsByCategory } from '../services/graphql'
 const CategoryFavorites = async ({category}) => {
   const items = await getItemsByCategory(category);
   
-  const lastItems = items.slice(0, 3);
+  // const lastItems = items.slice(0, 3);
   return (
     <div className='bg-neutral-200 p-5 py-20'>
       <div className='flex flex-wrap'>
@@ -13,7 +13,7 @@ const CategoryFavorites = async ({category}) => {
         </div>
         <div className='w-full lg:w-4/5 flex flex-col justify-center items-center p-10'>
           <div className='flex items-center justify-center gap-2 '>
-            {
+            {/* {
                     lastItems.map((item, index) => (
                       <div key={index} className=' bg-white w-56 h-56 text-center'>
                         <Link href={`/`}>
@@ -22,7 +22,7 @@ const CategoryFavorites = async ({category}) => {
                         </Link>
                       </div>
                     ))
-                  }
+                  } */}
 
           </div>
         </div>
