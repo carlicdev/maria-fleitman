@@ -10,7 +10,7 @@ const Contact = () => {
             <ContactForm />
           </div>
           <div className='order-1 lg:order-2 w-full lg:w-1/2'>
-              <Image src={'/maria-fondo.jpg'} width={1000} height={1000} />
+              <Image src={'/maria-fondo.jpg'} alt='uno' width={1000} height={1000} />
           </div>
       </div>
       <div className='w-full bg-[#c2ac92] py-20 border-y border-black flex justify-center items-center gap-5'>
