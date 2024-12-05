@@ -19,7 +19,7 @@ const OutfitOfTheWeek = async () => {
               <div className='w-full lg:w-1/2 p-5'>
                 <img src={outfits[0].featuredImage.url} alt='outfit' className='w-full h-[700px]' />
               </div>
-              <div className='w-full lg:w-1/2 p-5 flex flex-wrap'>
+              {/* <div className='w-full lg:w-1/2 p-5 flex flex-wrap'>
                 <div className='w-full lg:w-1/2 text-center'>
                   <img src={outfits[0].clothingItem[0].image.url} alt='outfit-item-1' className='cover no-repeat' />
                   <p className='capitalize'>{outfits[0].clothingItem[0].title}</p>
@@ -36,7 +36,7 @@ const OutfitOfTheWeek = async () => {
                   <img src={outfits[0].clothingItem[3].image.url} alt='outfit-item-1' className='cover no-repeat' />
                   <p className='capitalize'>{outfits[0].clothingItem[3].title}</p>
                 </div>
-              </div>
+              </div> */}
             </div>
           )
         }
