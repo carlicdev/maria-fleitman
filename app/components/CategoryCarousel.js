@@ -17,7 +17,7 @@ const CategoryCarousel = async ({category}) => {
                 <div className='flex items-center justify-center gap-4 '>
                   {
                     lastPosts.map((post, index) => (
-                      <div className=' bg-white w-72 h-80'>
+                      <div key={index} className=' bg-white w-72 h-80'>
                         <Link href={`/post/${post.node.slug}`}>
                           <img src={post.node.featuredImage.url} alt='uno' className='w-72 h-56' />
                           <p className='font-black text-3xl mt-2'>{post.node.title}</p>

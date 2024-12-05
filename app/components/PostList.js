@@ -11,7 +11,7 @@ const PostList = async ({category}) => {
     <div className='w-full flex flex-wrap'>
       {
         posts.map((post, index) => (
-          <div className='w-full md:w-1/2 lg:w-1/3 mt-5 p-5'>
+          <div key={index} className='w-full md:w-1/2 lg:w-1/3 mt-5 p-5'>
             <img src={post.node.featuredImage.url} alt='uno' className='w-full h-[300px]' />
             <Link href={`/post/${post.node.slug}`}>                        
                 <p className='my-5 text-neutral-300 font-bold text-2xl'>{post.node.title}</p>

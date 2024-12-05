@@ -20,7 +20,7 @@ const LatestArticles = async() => {
             {
                 posts && (
                     posts.map((post, index) => (
-                        <div className='w-full lg:w-1/2 mt-5 p-5'>
+                        <div key={index} className='w-full lg:w-1/2 mt-5 p-5'>
                             {console.log(post.node)}
                             <img src={post.node.featuredImage.url} alt='uno' className='w-full h-[200px]' />
                             <Link href={`/post/${post.node.slug}`}>                        
