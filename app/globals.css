@@ -9,7 +9,27 @@ body {
   font-family: var(--font-poppins);
 }
 
+.title {
+  font-family: var(--font-robotoserif);
+}
+
 .text-special {
-  font-family: var(--font-cedarville);
+  font-family: var(--font-parisienne);
+}
+
+.inspiration {
+  background-image: url('/paper-e1680855654553.png');
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: auto;
+}
+
+.featured {
+  background-image: url('/texture-bckgd-copy-scaled-e1680855620626.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
 }
 

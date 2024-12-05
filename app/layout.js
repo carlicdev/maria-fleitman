@@ -1,18 +1,24 @@
-import { Poppins, Fira_Sans, Cedarville_Cursive} from "next/font/google";
+import { Poppins, Fira_Sans, Cedarville_Cursive,  Roboto_Serif, Parisienne,  } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
-const poppins = Fira_Sans({ 
-  weight: ['400'],
+const poppins = Poppins({ 
+  weight: ['100', '200', '300', '400', '500', '600', '700'],
   subsets: ['latin'],
   variable: '--font-poppins',
  })
 
- const cedarville = Cedarville_Cursive({ 
+ const parisienne = Parisienne({ 
   weight: ['400'],
   subsets: ['latin'],
-  variable: '--font-cedarville',
+  variable: '--font-parisienne',
+ })
+
+ const robotoSerif = Roboto_Serif({
+  weight: ['100', '200', '300', '400', '500', '600', '700', ],
+  subsets: ['latin'],
+  variable: '--font-robotoserif'
  })
 
 export const metadata = {
@@ -23,7 +29,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${cedarville.variable} ${poppins.variable}`}>
+      <body className={`${parisienne.variable} ${poppins.variable} ${robotoSerif.variable}`}>
         <Navbar />
         {children}
         <Footer />

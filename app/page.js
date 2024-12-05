@@ -8,6 +8,10 @@ import HomeFinds from "./components/HomeFinds";
 import ReelsSection from "./components/ReelsSection";
 import SubscribeSection from "./components/SubscribeSection";
 import CategoriesSection from "./components/CategoriesSection";
+import LatestArticles from "./components/LatestArticles";
+import HomeFindsAlt from "./components/HomeFindsAlt";
+import AmazonFavorites from "./components/AmazonFavorites";
+import SubscribeAlt from "./components/SubscribeAlt";
 
 export default function Home() {
   return (
@@ -21,7 +25,17 @@ export default function Home() {
       <HomeFinds />
       <CategoriesSection />
       <SubscribeSection />
+      <div className="max-w-7xl mx-auto flex flex-wrap mt-20">
+        <div className="w-full lg:w-3/4">
+          <LatestArticles />
+        </div>
+        <div className="w-full lg:w-1/4 flex flex-col gap-10">
+          <HomeFindsAlt />
+          <AmazonFavorites />
+        </div>
+      </div>
       <ReelsSection />
+      <SubscribeAlt />
     </main>
   );
 }

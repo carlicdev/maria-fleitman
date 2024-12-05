@@ -52,7 +52,7 @@ export const getPosts = async () => {
             featuredImage {
               url
             }
-            categories {
+            category {
               name
               slug
             }
@@ -145,7 +145,7 @@ export const getPostDetails = async (slug) => {
               featuredImage {
                 url
               }
-              categories {
+              category {
                 name
                 slug
               }
@@ -251,7 +251,7 @@ export const getAdjacentPosts = async (createdAt, slug) => {
 export const getCategoryPost = async (slug) => {
   const query = gql`
     query GetCategoryPost($slug: String!) {
-      postsConnection(where: {categories_some: {slug: $slug}}, last: 50) {
+      postsConnection(where: {category_some: {slug: $slug}}, last: 50) {
         edges {
           cursor
           node {
@@ -270,7 +270,7 @@ export const getCategoryPost = async (slug) => {
             featuredImage {
               url
             }
-            categories {
+            category {
               name
               slug
             }
@@ -284,3 +284,72 @@ export const getCategoryPost = async (slug) => {
 
   return result.postsConnection.edges.reverse();
 };
+
+export const getOutfits = async () => {
+  const query = gql`
+query MyQuery {
+  outfits {
+    mainImage {
+      url
+      id
+    }
+    clothingItem {
+      title
+      image {
+        id
+        url
+      }
+    }
+  }
+}
+  `
+
+  const result = await request(graphqlAPI, query);
+  return result.outfits;
+};
+
+export const getItems = async () => {
+  const query = gql`
+query MyQuery {
+  items {
+    category {
+      name
+    }
+    description
+    image {
+      url
+    }
+    name
+    price
+    slug
+  }
+}
+  `
+
+  const result = await request(graphqlAPI, query);
+  return result.items;
+};
+
+export const getItemsByCategory = async (slug) => {
+  const query = gql`
+query MyQuery ($slug: String!)  {
+  items (where: {category_some: {slug: $slug}}, last: 50) {
+    category {
+      name
+    }
+    description
+    image {
+      url
+    }
+    name
+    price
+    slug
+  }
+}
+  `
+
+  const result = await request(graphqlAPI, query, { slug });
+  return result.items;
+};
+
+
