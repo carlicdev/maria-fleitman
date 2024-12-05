@@ -3,7 +3,7 @@ import AmazonFavorites from '@/app/components/AmazonFavorites';
 import HomeFindsAlt from '@/app/components/HomeFindsAlt';
 import PostDetail from '@/app/components/PostDetail';
 import ReelsSection from '@/app/components/ReelsSection';
-import SubscribeSection from '@/app/components/SubscribeSection';
+import SubscribeAlt from '@/app/components/SubscribeAlt';
 import { getPostDetails } from '@/app/services/graphql';
 
 const PostPage = async ({params}) => {
@@ -22,7 +22,7 @@ const PostPage = async ({params}) => {
           </div>
         </div>
         <ReelsSection />
-        <SubscribeSection />
+        <SubscribeAlt />
     </main>
   )
 }
