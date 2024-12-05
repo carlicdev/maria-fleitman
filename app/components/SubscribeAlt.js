@@ -35,7 +35,7 @@ const SubscribeAlt = () => {
                 <div className='z-20 max-w-[400px] border border-gray-200 shadow bg-white rounded p-2 text-center'>
                     <div className='w-full p-10 bg-neutral-200'>
                         <p className='text-2xl mb-5'>Subscribe</p>
-                        <p>Join over 1,000,000 readers and get The Blonde Abroad's go-to packing guide, exclusive travel tips, priority access to giveaways and more!</p>
+                        <p>{`Join over 1,000,000 readers and get The Blonde Abroad's go-to packing guide, exclusive travel tips, priority access to giveaways and more!`}</p>
                     </div>
                 </div>
                 <div className='z-10 max-w-[300px] border border-gray-200 shadow bg-white rounded p-2 pb-10 text-center absolute top-10 right-10 -rotate-3'>
