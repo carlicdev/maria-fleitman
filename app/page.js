@@ -6,7 +6,6 @@ import CTA from "./components/CTA";
 import NewestVideos from "./components/NewestVideos";
 import HomeFinds from "./components/HomeFinds";
 import ReelsSection from "./components/ReelsSection";
-import SubscribeSection from "./components/SubscribeSection";
 import CategoriesSection from "./components/CategoriesSection";
 import LatestArticles from "./components/LatestArticles";
 import HomeFindsAlt from "./components/HomeFindsAlt";
@@ -24,7 +23,6 @@ export default function Home() {
       <NewestVideos />
       <HomeFinds />
       <CategoriesSection />
-      <SubscribeSection />
       <div className="max-w-7xl mx-auto flex flex-wrap mt-20">
         <div className="w-full lg:w-3/4">
           <LatestArticles />
