@@ -18,7 +18,7 @@ const LatestArticles = async() => {
         </div>
         <div className='w-full flex flex-wrap '>
             {
-                posts && (
+                posts.length && (
                     posts.map((post, index) => (
                         <div key={index} className='w-full lg:w-1/2 mt-5 p-5'>
                             {console.log(post.node)}
